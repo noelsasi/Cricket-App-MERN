@@ -1,13 +1,192 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.brand-text {
+  font-family: "Calistoga", cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.search-container {
+  padding-left: 1.5rem;
+  ;
+}
+
+hr {
+  margin: 1rem 0 0 0 !important;
+  border: 0;
+  border-top: 1px dashed rgb(138, 128, 128) !important;
+}
+
+.list-wrapper {
+  display: grid;
+  place-content: center;
+}
+
+.view-container {
+  padding-top: 3rem;
+}
+
+.top-wrapper, .second-wrapper {
+  background: rgb(236, 236, 236);
+  border: 1px solid black;
+  display: grid;
+  grid-gap: 1rem;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.second-wrapper {
+  background: rgb(255, 156, 156);
+  margin-top: 1rem;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.search {
+  margin-bottom: 1rem;
+  width: 25%;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid rgb(202, 200, 200);
+  padding: 0 1rem;
+  height: 42px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search input {
+  height: 28px;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  margin-left: 10px;
+}
+
+.card-size {
+  width: 15rem;
+}
+
+.card-body {
+  padding: 0.8rem !important;
+}
+
+.card-footer {
+  background-color: #ddd !important;
+}
+
+.img-handler {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3px;
+  place-items: center;
+}
+
+.team-logo {
+  height: 75px;
+}
+
+.text-small {
+  font-size: 10px;
+  color: #9b9b9b;
+  font-weight: bolder;
+}
+
+.myfonts {
+  font-family: "Rubik", sans-serif;
+}
+
+.card-inside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.custom-search {
+  border-radius: 8px !important;
+}
+
+.btn-sm-custom {
+  padding: 5px !important;
+  height: 20px !important;
+  line-height: 50% !important;
+  font-size: 13px !important;
+}
+
+.badge-secondary {
+  max-width: 5.5rem !important;
+}
+
+.dropdown {
+  height: 30px;
+  min-width: 120px;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.fav-team {
+  height: 30px;
+  min-width: 120px;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.img-container {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.loader {
+  height: 250px;
+}
+
+.srh {
+  background: radial-gradient(circle, rgba(246, 143, 0, 1) 48%, rgba(255, 65, 37, 1) 100%);
+}
+
+.rcb {
+  background: linear-gradient(90deg, rgba(255, 170, 0, 1) 7%, rgba(255, 42, 42, 1) 100%);
+}
+
+.csk {
+  background: radial-gradient(circle, rgba(0, 87, 223, 1) 0%, rgba(255, 204, 0, 1) 61%);
+}
+
+.mi {
+  background: linear-gradient(90deg, rgba(0, 42, 255, 1) 0%, rgba(242, 169, 0, 1) 100%);
+}
+
+.gl {
+  background: linear-gradient(90deg, rgba(0, 21, 128, 1) 0%, rgba(242, 12, 17, 1) 100%);
+}
+
+.rps {
+  background: linear-gradient(90deg, rgba(255, 226, 0, 1) 0%, rgba(253, 29, 188, 1) 50%, rgba(0, 34, 217, 1) 100%);
+}
+
+.kkr {
+  background: linear-gradient(90deg, rgba(46, 8, 84, 1) 100%, rgba(179, 161, 35, 1) 100%);
 }
