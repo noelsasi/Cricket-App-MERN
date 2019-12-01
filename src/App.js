@@ -7,6 +7,7 @@ import SignUp from "./components/signup";
 
 function App() {
   return (
+    // Main view for defining routes for each module
     <Router>
       <div>
         <Route path="/" exact component={Login} />

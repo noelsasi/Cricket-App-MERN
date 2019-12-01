@@ -39,6 +39,7 @@ class prediction extends Component {
       team1: this.state.team1,
       team2: this.state.team2
     };
+    // sending req to predict the future match
     axios
       .post("/result", data)
       .then(response => {

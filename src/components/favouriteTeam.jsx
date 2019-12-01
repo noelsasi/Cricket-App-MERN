@@ -6,6 +6,7 @@ function favouriteTeam(props) {
   const teams = props.matches.map(s => s.team1);
   const teamList = [...new Set(teams)];
 
+  // Pure function to generate options from an array
   const optionValues = array => {
     return array.map(item => {
       return {
@@ -22,7 +23,7 @@ function favouriteTeam(props) {
       favTeam: e.value
     };
 
-    axios.post("/user/updateTeam", newList).then(res => console.log(res.data));
+    axios.post("/user/updateTeam", newList).then(res => console.log(res.data)); // api req to update favTeam
   }
 
   return (

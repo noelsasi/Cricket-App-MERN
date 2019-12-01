@@ -12,8 +12,6 @@ module.exports = function(app) {
       successRedirect: "/user"
     })
   );
-
-  // app.get("/register", controllers.signup.view);
   app.post(
     "/register",
     passport.authenticate("local-signup", {
@@ -22,14 +20,14 @@ module.exports = function(app) {
       successRedirect: "/matches"
     })
   );
-
   app.get("/logout", controllers.login.logout);
 
+  // user Routes
   app.get("/users", controllers.users.view);
   app.get("/user", controllers.users.userDetail);
   app.post("/user/updateTeam", controllers.users.addTeam);
 
-  // matches Route
+  // matches Routes
   app.get("/matches", controllers.home.view);
   app.get("/matches/:id", controllers.home.one);
   app.post("/result", controllers.home.prediction);

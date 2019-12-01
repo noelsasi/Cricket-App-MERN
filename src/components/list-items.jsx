@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+// importing images
 import srh from "../logos/srh.png";
 import rcb from "../logos/rcb.png";
 import dd from "../logos/dd.png";
@@ -61,6 +62,7 @@ class ListItem extends Component {
       </div>
     );
   }
+  // function to get team matched logos
   logosetter(team) {
     let image = "";
     if (team === "Sunrisers Hyderabad") {

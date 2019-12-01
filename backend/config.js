@@ -6,7 +6,7 @@ const config = {
   development: {
     root: rootPath,
     app: {
-      name: "MERN-TODO"
+      name: "MERN-Cricket-app"
     },
     port: process.env.PORT || 5000,
     db: "mongodb://localhost:27017/cricket"
@@ -15,7 +15,7 @@ const config = {
   test: {
     root: rootPath,
     app: {
-      name: "MERN-TODO"
+      name: "MERN-Cricket-app"
     },
     port: process.env.PORT || 3000,
     db: "mongodb://localhost/cricket"
@@ -24,7 +24,7 @@ const config = {
   production: {
     root: rootPath,
     app: {
-      name: "MERN-TODO"
+      name: "MERN-Cricket-app"
     },
     port: process.env.PORT || 3000,
     db: "mongodb://localhost/cricket"

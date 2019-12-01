@@ -6,6 +6,7 @@ function dropdown(props) {
   const seasonsList = [...new Set(seasons)];
   // console.log(seasonsList, "seasonsList");
 
+  // Pure function to generate options from an array
   const optionValues = array => {
     return array.map(item => {
       return {

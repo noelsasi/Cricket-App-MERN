@@ -29,6 +29,7 @@ class Login extends Component {
     };
 
     axios.post("/login", user).then(res => {
+      // sending req to verify login
       const data = res.data;
       if (data.username) {
         console.log(data.username, "Login Data");

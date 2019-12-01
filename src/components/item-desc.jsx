@@ -13,7 +13,7 @@ class MatchDescription extends Component {
   }
 
   componentDidMount() {
-    axios
+    axios // api call to get all matches data
       .get(`/matches/${this.props.match.params.id}`)
       .then(response => {
         console.log(response.data, "Each Match Data");
@@ -22,7 +22,7 @@ class MatchDescription extends Component {
       .catch(function(error) {
         console.log(error);
       });
-    axios
+    axios // api call to get users data
       .get("/user")
       .then(response => {
         console.log(response.data, "userData Data");

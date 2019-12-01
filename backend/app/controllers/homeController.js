@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const matches = mongoose.model("matches");
 
 module.exports = {
+  // request to view all matches
   view: function(req, res, next) {
     // eslint-disable-next-line array-callback-return
     matches.find((err, list) => {
@@ -12,14 +13,16 @@ module.exports = {
     });
   },
 
+  // request to view single matche
   one: function(req, res, next) {
     let id = req.params.id;
-    matches.findById(id, (err, todo) => {
+    matches.findById(id, (err, data) => {
       if (err) return next(err);
-      res.json(todo);
+      res.json(data);
     });
   },
 
+  // request to make predictions
   prediction: function(req, res) {
     const bodyTeam1 = req.body.team1;
     const bodyTeam2 = req.body.team2;

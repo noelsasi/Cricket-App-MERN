@@ -21,7 +21,7 @@ class listContainer extends Component {
       userData: {},
       bgClass: ""
     };
-
+    //binding
     this.searchResults = this.searchResults.bind(this);
     this.favTeam = this.favTeam.bind(this);
   }
@@ -54,13 +54,16 @@ class listContainer extends Component {
       });
   }
 
+  // function that gets input from search and filter and gives relevant data
   searchResults(searchText, type) {
     const regex = new RegExp(searchText, "gi");
     const matches = this.state.matches;
     const searchMatch = matches.filter(match => {
       if (type === "searchFilter") {
+        // for search by word
         return match.team1.match(regex);
       } else {
+        // for filter by seson
         return match.season.match(regex);
       }
     });
@@ -70,8 +73,8 @@ class listContainer extends Component {
     });
   }
 
+  // dynamically changing bg-color by user input
   favTeam(value) {
-    // const favteam = this.state.userData.favTeam;
     let classes = "row view-container col-md-12";
     if (value === "Sunrisers Hyderabad") {
       this.setState({ bgClass: "srh" });
@@ -100,13 +103,14 @@ class listContainer extends Component {
   }
 
   render() {
+    // code to get basic inputs to do pagination
     const indexOfLastMatch = this.state.currentPage * this.state.matchesPerPage;
     const indexOfFirstMatch = indexOfLastMatch - this.state.matchesPerPage;
     const currentMatch = this.state.searchData.slice(
       indexOfFirstMatch,
       indexOfLastMatch
     );
-
+    // getting current page
     const paginate = pageNumber => this.setState({ currentPage: pageNumber });
 
     return (
